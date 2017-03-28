@@ -1,3 +1,7 @@
+/* eslint linebreak-style: ["error", "windows"]*/
+/* eslint-env es6*/
+
+
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const bcrypt = require('bcrypt');

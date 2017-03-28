@@ -1,5 +1,6 @@
 // dotenv allows us to declare environment variables in a .env file, \
 // find out more here https://github.com/motdotla/dotenv
+/* eslint linebreak-style: ["error", "windows"]*/
 require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
