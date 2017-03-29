@@ -1,3 +1,5 @@
+/* eslint linebreak-style: ["error", "windows"]*/
+
 import React, { Component, PropTypes } from 'react';
 import { FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
 

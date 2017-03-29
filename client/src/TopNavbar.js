@@ -1,3 +1,5 @@
+/* eslint linebreak-style: ["error", "windows"]*/
+
 import React, { PropTypes } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { Link } from 'react-router';

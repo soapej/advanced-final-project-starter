@@ -7,6 +7,22 @@ const router = express.Router();
 const jwt = require('jwt-simple');
 const User = require('../models/UserModel');
 const bcrypt = require('bcrypt');
+const passport = require('passport');
+
+// Require custom strategies
+require('../services/passport');
+
+const signinStrategy = passport.authenticate('signingStrategy', { session: false });
+
+// Helper method to create a user token
+function tokenForUser(user) {
+  const timestamp = new Date().getTime();
+  return jwt.encode({ userId: user.id, iat: timestamp }, process.env.SECRET);
+}
+
+router.post('/api/signin', signinStrategy, function (req, res, next) {
+  res.json({ token: tokenForUser(req.user)});
+});
 
 
 router.post('/api/signup', function (req, res, next) {

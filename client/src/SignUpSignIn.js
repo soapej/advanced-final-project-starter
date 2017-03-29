@@ -1,3 +1,5 @@
+/* eslint linebreak-style: ["error", "windows"]*/
+
 import React, { Component, PropTypes } from 'react';
 import { Tabs, Tab, Row, Col, Alert } from 'react-bootstrap';
 import SignUp from './SignUp';
