@@ -27,7 +27,7 @@ const TopNavbar = (props) => {
       }
     </Navbar>
   );
-}
+};
 
 TopNavbar.propTypes = {
   onSignOut: PropTypes.func.isRequired,

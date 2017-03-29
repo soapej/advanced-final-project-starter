@@ -11,7 +11,7 @@ class SignUp extends Component {
       username: '',
       password: '',
       confirmPassword: '',
-    }
+    };
   }
 
   handleSubmit(event) {
@@ -70,8 +70,8 @@ class SignUp extends Component {
         </FormGroup>
 
         <Button type="submit">
-         Sign Up
-       </Button>
+          Sign Up
+        </Button>
       </form>
     );
   }
